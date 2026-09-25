@@ -121,7 +121,7 @@ Embed an image of the study species, *Solanum pimpinellifolium*, with Markdown i
 ```markdown
 ![hydroponic_g13](images/Hydroponic_g13.jpg)
 
-Source: [Solanum pimpinellifolium](https://onq.queensu.ca/d2l/le/dropbox/1208667/492096/DownloadAttachment?fid=54136518)
+!Source: [Solanum pimpinellifolium](https://onq.queensu.ca/d2l/le/dropbox/1208667/492096/DownloadAttachment?fid=54136518)
 
 # Repository
 

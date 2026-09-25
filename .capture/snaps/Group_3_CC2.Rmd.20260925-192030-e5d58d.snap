@@ -43,8 +43,6 @@ The chunk below sets the default options for every other chunk in the document. 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-```{r setup, message=FALSE}
-library(ggplot2)
 
 # Data dictionary
 
@@ -69,6 +67,7 @@ cc1_data = read.csv("data/A1_Data_Excel.csv")
 cc1_data = cc1_data[1:46, c("population_type", "ovary_width", "ovary_height", "flower_number")]
 
 cc1_data$ovary_area = cc1_data$ovary_width * cc1_data$ovary_height
+
 head(cc1_data)
 ```
 
@@ -111,14 +110,14 @@ Make a histogram of `ovary_area` with `ggplot()` + `geom_histogram()` (Chapter 4
 
 ```{r area-histogram, echo = FALSE, message = FALSE, warning = FALSE}
 ggplot(cc1_data, aes(x=ovary_area)) + geom_histogram(binwidth = 0.5) + facet_wrap(~population_type)+labs(
-    title = "Distribution of Ovary Area by Population Type", x = expression ("Ovary Area (mm"^2*")"),y="Frequency")+ theme_classic()
+    title = "Distribution of Ovary Area by Population Type", x = expression ("Ovary Area (mm"^2*")"),y="Frequency")+ theme_clasic()
+
 ```
 
 # Image
 
 Embed an image of the study species, *Solanum pimpinellifolium*, with Markdown image syntax (Chapter 5, *Images*). Save the image file in an `images` folder inside your project folder and use a **relative path**, exactly as the chapter does, so that the image is pushed to GitHub with everything else. The text in the square brackets is the caption. Below the image, give the **source** as a Markdown link to the page you took it from.
 
-```markdown
 ![hydroponic_g13](images/Hydroponic_g13.jpg)
 
 Source: [Solanum pimpinellifolium](https://onq.queensu.ca/d2l/le/dropbox/1208667/492096/DownloadAttachment?fid=54136518)

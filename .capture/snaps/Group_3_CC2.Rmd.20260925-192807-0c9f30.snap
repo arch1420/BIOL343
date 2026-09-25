@@ -43,8 +43,7 @@ The chunk below sets the default options for every other chunk in the document. 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-```{r setup, message=FALSE}
-library(ggplot2)
+```
 
 # Data dictionary
 
@@ -118,7 +117,6 @@ ggplot(cc1_data, aes(x=ovary_area)) + geom_histogram(binwidth = 0.5) + facet_wra
 
 Embed an image of the study species, *Solanum pimpinellifolium*, with Markdown image syntax (Chapter 5, *Images*). Save the image file in an `images` folder inside your project folder and use a **relative path**, exactly as the chapter does, so that the image is pushed to GitHub with everything else. The text in the square brackets is the caption. Below the image, give the **source** as a Markdown link to the page you took it from.
 
-```markdown
 ![hydroponic_g13](images/Hydroponic_g13.jpg)
 
 Source: [Solanum pimpinellifolium](https://onq.queensu.ca/d2l/le/dropbox/1208667/492096/DownloadAttachment?fid=54136518)
